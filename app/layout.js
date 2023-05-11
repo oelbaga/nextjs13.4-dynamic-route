@@ -1,3 +1,4 @@
+import Link from "next/link";
 import "./globals.scss";
 
 export const metadata = {
@@ -8,7 +9,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <h1>
+          <Link href="./">App Router: Dynamic routing from API request</Link>
+        </h1>
+        {children}
+      </body>
     </html>
   );
 }

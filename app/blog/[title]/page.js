@@ -25,18 +25,15 @@ export default async function Home({ params }) {
   //   }
   return (
     <main className={styles.main}>
-      <h1>Dynamic routing based on an API request in the App router</h1>
-      <h2>Dynamic Title: {displayTitle}</h2>
-      <h4>
-        <a
-          href="https://jsonplaceholder.typicode.com/posts"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          Use any title from the json and replace spaces with dashes in the
-          dynamic route and the title should didplay here
-        </a>
-      </h4>
+      <h2>{displayTitle}</h2>
+      <a
+        href="https://jsonplaceholder.typicode.com/posts"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Use any title from the json and replace spaces with dashes in the
+        dynamic url route and the title should display above.
+      </a>
     </main>
   );
 }
